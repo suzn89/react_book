@@ -1,0 +1,19 @@
+    
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/react.js"></script> <!-- react 라이브러리 -->
+    <script src="js/react-dom.js"></script> <!-- react DOM 라이브러리 -->
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      let h1 = React.createElement('h1',null,'hello world!!')
+      ReactDOM.render(
+        React.createElement('div', null, h1, h1),
+        document.getElementById('content')
+      )
+      
+    </script>
+  </body>
+</html>
